@@ -1,7 +1,6 @@
 import unittest
-#import sys
-
 from FastaNexus import read_fasta, nexus_header, nexus_body
+
 test = "C:/Users/saras/Documents/ASB/Seq1test.fasta"
 
 class TestFastaToNexus(unittest.TestCase):
@@ -22,9 +21,5 @@ class TestFastaToNexus(unittest.TestCase):
         self.assertEqual(result,expected)
 
 if __name__ == '__main__':
-    #my_test = TestFastaToNexus(test)
-    #my_test.test_read_fasta()
-    #my_test.test_nexus_header()
-    #my_test.test_nexus_matrix()
     unittest.main()
-#https://www.dio.me/articles/teste-unitario-em-python-com-unittest
+
